@@ -1,29 +1,30 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "progressiveworldborder",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Progressive World Border",
+  "description": "Progressively increase world border based on in game date.",
   "authors": [
-    "Me!"
+    "TheGrimsey"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/TheGrimsey/ProgressiveWorldBorder",
+    "sources": "https://github.com/TheGrimsey/ProgressiveWorldBorder",
+    "issues": "https://github.com/TheGrimsey/ProgressiveWorldBorder/issues"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/progressiveworldborder/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.thegrimsey.progressiveworldborder.ProgressiveWorldBorder"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "progressiveworldborder.mixins.json"
   ],
 
   "depends": {
@@ -31,8 +32,5 @@
     "fabric": "*",
     "minecraft": "1.18.x",
     "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
